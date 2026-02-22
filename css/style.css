@@ -1,0 +1,644 @@
+@font-face {
+  font-family: 'Bettina Signature';
+  src: url('../fonts/BettinaSignatureRegular.woff2') format('woff2'),
+       url('../fonts/BettinaSignatureRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+font-family: "Open Sans", sans-serif;
+  margin: auto;
+  justify-content: center; /* horizontal */
+}
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+.cls{
+	clear:both;
+}
+
+.mn{
+  max-width: 1235px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p{
+font-family: "Zen Kaku Gothic New", sans-serif, Open Sans, sans-serif;
+  color: #4C3928;
+  font-size: 15px;
+}
+
+
+/* nav */
+
+/* ===== HAMBURGER BUTTON ===== */
+
+.but_nav_bx{
+height: 41px;
+  width: 41px;
+  padding-top: 9px;
+}
+
+.but_nav {
+width: 31px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 1001;
+  top: 43px; /* di atas banner */
+}
+
+.but_nav span {
+height: 4px;
+  background: #4C3928;
+  border-radius: 22px;
+  transition: transform .45s cubic-bezier(.4,0,.2,1), opacity .2s ease, width .3s ease;
+  transform-origin: left center;
+}
+
+/* leveling */
+.but_nav span:nth-child(1) { width: 25px; }
+.but_nav span:nth-child(2) { width: 25px; }
+.but_nav span:nth-child(3) { width: 25px; }
+/* pindah posisi hamburger ke dalam menu */
+.but_nav.active {
+position: fixed;
+  top: 38px;
+  left: 62px;
+  height: 31px;
+  width: 31px;
+}
+
+/* jadi X */
+.but_nav.active span:nth-child(1) {
+  background: #fff;
+  width: 32px;
+  transform: rotate(45deg) translate(5px, -2px);
+}
+
+.but_nav.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.but_nav.active span:nth-child(3) {
+	background: #fff;
+  width: 32px;
+  transform: rotate(-45deg) translate(5px, 2px);
+}
+
+.menu_nav {
+position: fixed;
+  top: 0px;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  background: #4C3928;
+  padding: 90px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: .4s ease;
+  z-index: 1000;
+}
+
+.menu_nav.active {
+  left: 0;
+}
+
+.menu_nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+/* end nav*/
+
+
+/* banner */
+
+.banner{
+background-image: linear-gradient( to left, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.9) 50%, rgb(255, 255, 255, 9) 60%, rgb(255, 255, 255) 70% , rgb(255, 255, 255) 100% ),url(../images/bn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-bottom: 8rem;
+}
+
+.nav_bx{
+	
+}
+
+
+.tl_bx{
+margin-top: 4rem;
+  text-align: center;
+  width: 833px;	
+}
+
+.tl_we{
+	
+	
+}
+
+.sb_tl{
+font-family: Zen Kaku Gothic New;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  margin: auto;
+  color: #4C3928;
+  font-weight: normal;	
+}
+
+.ms_tl{
+font-family: 'Bettina Signature';
+  font-size: 4rem;
+  color: #4C3928;
+}
+
+.1_tl{
+	
+}
+
+.n_tl{
+color: #CAC3B1;
+}
+
+.mi_tl{
+	
+}
+
+
+.2_tl{
+	
+}
+
+.rspv_bn{
+width: 67%;
+  margin: auto;	
+}
+
+.rsp_tl{
+font-family: Zen Kaku Gothic New;
+  color: #4C3928;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.rs_txt{
+	font-size: 17px;
+}
+
+.btn_rsp{
+position: relative;
+  display: inline-block;
+  background-color: #4C3928;
+  color: #fff;
+  padding: 8px;
+  width: 100px;
+  font-size: 17px;
+  border-radius: 22px;
+}
+
+
+/*end banner */
+
+
+/* our love story */
+
+.ols{
+	padding: 5rem 0;
+}
+
+.ols_tl{
+text-align: center;
+  font-family: 'Bettina Signature';
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #4C3928;
+  font-size: 25px;	
+}
+
+.mn_ols{
+font-family: Zen Kaku Gothic New;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: auto;
+  color: #4C3928;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 16px;
+}
+
+.gal_ols{
+margin-top: 4rem;
+  text-align: center;
+}
+
+.bx_gal{
+position: relative;
+  display: inline-grid;
+  width: 20%;
+  margin: 20px;
+}
+
+.pic_gal{
+	
+}
+
+.txt_gal{
+	
+}
+
+
+/* end our love story */
+
+
+
+/* the ceremony */
+
+.crmn{
+	margin: 6rem auto;
+}
+
+.crmn_bx{
+display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  padding: 0;	
+}
+
+.txt_crmn{
+margin: auto;
+  position: relative;
+  bottom: 60px;
+}
+
+.crmn_tl{
+text-align: center;
+  font-family: 'Bettina Signature';
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #4C3928;
+  font-size: 25px;	
+}
+
+.crmn_tl_2{
+font-family: Zen Kaku Gothic New;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: auto;
+  color: #4C3928;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 16px;	
+}
+
+.crmn_txt_bx{
+text-align: center;
+  margin-top: 9rem;
+  width: 350px;
+}
+
+.loc{
+	margin-top: 4rem;
+}
+
+.date{
+background-image: url(../images/date.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  right: 4px;
+}
+
+.time{
+background-image: url(../images/time.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  right: 2px;
+}
+
+.ln_loc{
+	
+}
+
+.loca{
+background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  right: 4px;	
+}
+
+.pic_crmn_bx{
+margin: auto;
+}
+
+.pic_crmn{
+	width: 443px;
+}
+
+
+/* end the ceremony */
+
+
+/* The Reception */
+
+.rcpn_bx{
+	  margin: 11rem auto;
+}
+
+.rcp_mn_bx{
+display: grid;
+  grid-auto-flow: column;
+  margin: auto;
+  padding: 0;
+}
+
+.pic_rcpn_bx{
+margin: auto;
+  width: 50%;
+}
+
+.pic_rcpn{
+	  width: 443px;
+}
+
+.rcpn_tx_bx{
+margin: auto;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  bottom: 22px;
+}
+
+.tl_rcpn{
+	text-align: center;
+  font-family: 'Bettina Signature';
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #4C3928;
+  font-size: 25px;
+}
+
+.tl_rcpn_mn{
+	font-family: Zen Kaku Gothic New;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: auto;
+  color: #4C3928;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 16px;
+}
+
+.ml_tx{
+	margin-top: 4rem;
+}
+
+.ln_loc{
+width: 288px;
+  border-bottom: 1px solid #4C3928;
+  margin: 2rem auto;
+}
+
+.rcpn_loc{
+	width: 300px;
+  margin: auto;
+}
+
+.drs_code{
+	margin-top: 6rem;
+}
+
+.tl_drs{
+	font-family: Zen Kaku Gothic New;
+  font-size: 17px;
+  color:#4C3928;
+}
+
+
+/* end The Reception */
+
+
+/* rsvp */
+
+.rsvp_bx{
+margin: auto;
+  background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.92) 70% , rgb(255, 255, 255, 1) 100% ),url(../images/rspv.png);
+  padding: 15rem 0;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.tx_rsvp{
+width: 516px;
+  margin: auto;
+  font-weight: inherit;
+  font-size: 19px;
+}
+
+.ln_rsvp{
+margin: 2rem auto;
+  border-bottom: 1px solid #4C3928;
+  width: 300px;	
+}
+
+
+
+
+/* end rsvp */
+
+
+/* contact information */
+
+.cti_bx{
+	margin-bottom: 11rem auto;
+}
+
+.cti_tl{
+text-align: center;
+  font-family: 'Bettina Signature';
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #4C3928;
+  font-size: 25px;	
+}
+
+.cti_tl_mn{
+font-family: Zen Kaku Gothic New;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: auto;
+  color: #4C3928;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+  bottom: 16px;	
+}
+
+.cti_s_bx{
+display: grid;
+  grid-auto-flow: column;
+  margin: 4rem auto;
+}
+
+.cti_1, .cti_3{
+	margin: auto 4rem;
+}
+
+.cti_1{
+	
+}
+
+.cti_2{
+border-left: 1px solid #4C3928;
+  height: 131px;
+  position: relative;
+  top: 0;
+  margin: auto 2rem;
+}
+
+.cti_3{
+bottom: 2rem;
+  position: relative;
+}
+
+
+.cti_tl_ms{
+font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;	
+}
+
+.email{
+background-image: url(../images/email.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  right: 0;	
+}
+
+.phone{
+background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  right: -1px;	
+}
+
+
+
+
+/* end contact information */
+
+
+/* footer */
+
+.ftr{
+background-image: linear-gradient( rgba(57, 31, 16, 0.4) 100% ),url(../images/ftr.png);
+  padding: 2rem 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  text-align: center;
+}
+
+.ftr p{
+
+}
+
+.ftr_tx{
+margin: 13rem auto;
+  width: 450px;
+  position: relative;
+}
+
+.ftr_tl{
+font-family: 'Bettina Signature';
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: #fff;
+  margin: auto;
+  font-weight: normal;
+}
+
+.p_ftr{
+color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.ftr_trx{
+	
+}
+
+.ftr_trx p{
+color: #fff;
+  font-size: 12px;
+}
+
+/* end footer */
